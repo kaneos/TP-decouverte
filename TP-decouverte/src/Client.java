@@ -43,6 +43,15 @@ public class Client
 	{
 		this.prenom = prenom;
 	}
+
+	public double soldeGeneralClient()
+	{
+		return 0;
+		
+	}
 	
-	
+	public void ajouterCompte()
+	{
+		
+	}
 }
