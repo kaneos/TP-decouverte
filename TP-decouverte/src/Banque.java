@@ -20,5 +20,20 @@ public class Banque
 		this.lesClients = lesClients;
 	}
 	
+	public ArrayList<Client>clientLePlusRiche()
+	{
+		return lesClients;
+		
+	}
 	
+	public ArrayList<Client>clientsRouge()
+	{
+		return lesClients;
+		
+	}
+	
+	public void ajoutClient()
+	{
+		
+	}
 }
