@@ -8,7 +8,6 @@ public class Courant extends Compte{
 	public Courant ()
 	{
 		super();
-		this.decouvertAutorise = 0;
 	}
 	
 	public Courant(String client, int numero, double solde, double decouvertAutorise)
