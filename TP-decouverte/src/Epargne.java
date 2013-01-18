@@ -1,6 +1,6 @@
 
 public class Epargne extends Compte{
-	private String client;
+	private Client client;
 	private int numero;
 	private double solde;
 	private double decouvertAutorise;
@@ -12,7 +12,7 @@ public class Epargne extends Compte{
 		
 	}
 	
-	public Epargne(String client, int numero, double solde, double decouvertAutorise)
+	public Epargne(Client client, int numero, double solde, double decouvertAutorise)
 	{
 		super(client, numero, solde);
 		this.decouvertAutorise = decouvertAutorise;

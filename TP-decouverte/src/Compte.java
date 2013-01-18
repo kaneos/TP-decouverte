@@ -1,7 +1,7 @@
 
 public class Compte {
 	
-	private String client;
+	private Client client;
 	private int numero;
 	private double solde;
 	
@@ -11,19 +11,19 @@ public class Compte {
 		
 	}
 
-	public Compte(String client, int numero, double solde)
+	public Compte(Client client, int numero, double solde)
 	{
 		this.client = client;
 		this.numero = numero ;
 		this.solde = solde ;
 	}
 
-	public String getClient() 
+	public Client getClient() 
 	{
 		return client;
 	}
 
-	public void setClient(String client)
+	public void setClient(Client client)
 	{
 		this.client = client;
 	}
