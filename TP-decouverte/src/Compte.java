@@ -8,6 +8,7 @@ public class Compte {
 	
 	public Compte()
 	{
+		
 	}
 
 	public Compte(String client, int numero, double solde)
@@ -46,6 +47,32 @@ public class Compte {
 	{
 		this.solde = solde;
 	}
+	
+	public String toString()
+	{
+		return ("[Client] = "+this.client+" ; [Numero] = "+this.numero+" ; [Solde] = "+this.solde);
+	}
+	
+	public void crediter(double montant)
+	{
+		this.solde = this.solde + montant ;
+	}
+	
+	public boolean debiter(double montant)
+	{
+		boolean possible = true;
+		if (montant > this.solde)
+		{
+			possible = false;
+		}
+		else
+		{
+			this.solde = this.solde - montant ;
+		}
+		
+		return possible;
+	}
+	
 	
 	
 

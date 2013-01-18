@@ -7,8 +7,7 @@ public class Courant extends Compte{
 	
 	public Courant ()
 	{
-		super();
-		this.decouvertAutorise=48648646;
+		
 	}
 	
 	public Courant(String client, int numero, double solde, double decouvertAutorise)
@@ -73,6 +72,10 @@ public class Courant extends Compte{
 		
 		return possible;
 	}
+	
+
+	
+	
 	
 	
 	
