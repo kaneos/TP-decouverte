@@ -73,6 +73,26 @@ public class Compte {
 		return possible;
 	}
 	
+	public boolean transfertMontant(double montant, Compte unCompte)
+	{
+		boolean possible = false;
+		if(debiter(montant))
+		{
+			unCompte.crediter(montant);
+		}
+		return possible;
+	}
+	
+	public boolean comparerMontant(Compte unCompte)
+	{
+		boolean possible = true;
+		if(this.getSolde() < unCompte.getSolde())
+		{
+			possible = false;
+		}
+		return possible;
+	}
+	
 	
 	
 
